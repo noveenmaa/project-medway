@@ -7,12 +7,14 @@ import Search from "./Search";
 import Login from "./Login";
 import MedicineEdit from "./MedicineEdit";
 import Signup from "./Signup";
+import React from "react";
+
 
 function App() {
   return (
+    <>
     <div className="App">
       <Navbar />
-
       <div className="content">
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -25,6 +27,7 @@ function App() {
         </Routes>
       </div>
     </div>
+    </>
   );
 }
 

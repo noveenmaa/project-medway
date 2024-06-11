@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import MedicineEdit from "./MedicineEdit";
-
+import React from "react";
 const MedicineBody = ({ medicine }) => {
   const navigate = useNavigate();
 

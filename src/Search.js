@@ -3,12 +3,13 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import checkAuth from "./checkAuth";
 import MedicineList from "./MedicineList";
-
+import React from "react";
 const Search = () => {
   const [keyword, setKeyword] = useState("");
 
   // temp variable
   const [tempData, setTempData] = useState([]);
+  
   const user = useSelector((store) => store.auth.user);
 
   const handleChaange = (e) => {

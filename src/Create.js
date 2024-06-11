@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import checkAuth from "./checkAuth";
 import { useSelector } from "react-redux";
-
+import React from "react";
 const Create = () => {
   const [name, setMedname] = useState("");
   const [company, setCompanyname] = useState("");

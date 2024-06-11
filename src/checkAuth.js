@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import {React ,useEffect} from "react";
 
 export const checkAuth = (Component) => {
   function Wrapper(props) {
@@ -11,7 +12,7 @@ export const checkAuth = (Component) => {
         navigate("/login");
       }
     }, [user]);
-    return <Component {...props} />;
+    return (<Component {...props} />);
   }
   return Wrapper;
 };

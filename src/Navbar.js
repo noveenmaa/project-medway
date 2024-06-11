@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "./store/authSlice";
-
+import React from "react";
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();

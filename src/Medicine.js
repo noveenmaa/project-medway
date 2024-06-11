@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import checkAuth from "./checkAuth";
 import MedicineBody from "./MedicineBody";
-
+import React from "react";
 const Medicine = () => {
   const { id } = useParams();
   const [medicine, setMedicine] = useState(null);

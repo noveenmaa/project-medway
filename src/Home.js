@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import checkAuth from "./checkAuth";
 import MedicineList from "./MedicineList";
-
+import React from "react";
 const Home = () => {
   const [medicines, setMedicines] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,9 +18,7 @@ const Home = () => {
         },
       })
         .then((res) => {
-          // if (!res.ok) {
-          //   throw Error("Could not fetch the Data.");
-          // }
+          
           return res.json();
         })
         .then((data) => {
